@@ -4,12 +4,12 @@ import Sequelize from 'sequelize';
 // sequelize db:migrate
 // sequelize db:migrate:undo ou undo:all
 
-// Import suas models aqui!
+import User from '../app/models/User';
 
 import databaseConfig from '../config/database';
 
 // Adicione as models os array!
-const models = [];
+const models = [User];
 
 class Database {
   constructor() {
